@@ -14,3 +14,18 @@ function initializeViz() {
   }
   
   initializeViz();
+
+  function initializeViz2() {
+    // JS object that points at empty div in the html
+    var placeholderDiv = document.getElementById("viz2");
+    // URL of the viz to be embedded
+    var url = "https://public.tableau.com/views/HistoricalApproval/HApp?:language=es&:display_count=y&publish=yes&:origin=viz_share_link";
+    // An object that contains options specifying how to embed the viz
+    var options2 = {
+      hideTabs: true,
+      hideToolbar: true,
+    };
+    viz = new tableau.Viz(placeholderDiv, url, options2);
+  }
+  
+  initializeViz2();
