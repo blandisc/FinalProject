@@ -29,3 +29,36 @@ function initializeViz() {
   }
   
   initializeViz2();
+
+
+  function initializeViz3() {
+    // JS object that points at empty div in the html
+    var placeholderDiv = document.getElementById("viz3");
+    // URL of the viz to be embedded
+    var url = "https://public.tableau.com/views/TweetsperUser/Dashboard1?:language=es&:display_count=y&publish=yes&:origin=viz_share_link";
+    // An object that contains options specifying how to embed the viz
+    var options2 = {
+      hideTabs: true,
+      hideToolbar: true,
+    };
+    viz = new tableau.Viz(placeholderDiv, url, options2);
+  }
+  
+  initializeViz3();
+
+  function initializeViz4() {
+    // JS object that points at empty div in the html
+    var placeholderDiv = document.getElementById("viz4");
+    // URL of the viz to be embedded
+    var url = "https://public.tableau.com/views/Bubbles_15991821455080/Dashboard2?:language=es&:display_count=y&publish=yes&:origin=viz_share_link";
+    // An object that contains options specifying how to embed the viz
+    var options2 = {
+      hideTabs: true,
+      hideToolbar: true,
+      width: '500px',
+      height: '500px',
+    };
+    viz = new tableau.Viz(placeholderDiv, url, options2);
+  }
+  
+  // initializeViz4();
