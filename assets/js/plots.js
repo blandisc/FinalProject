@@ -50,7 +50,7 @@ function initializeViz() {
     // JS object that points at empty div in the html
     var placeholderDiv = document.getElementById("viz4");
     // URL of the viz to be embedded
-    var url = "https://public.tableau.com/views/NewResults/Dashboard1?:language=es&:display_count=y&publish=yes&:origin=viz_share_link";
+    var url = "https://public.tableau.com/views/Negativity_15993269913970/Dashboard1?:language=es&:display_count=y&publish=yes&:origin=viz_share_link";
     // An object that contains options specifying how to embed the viz
     var options2 = {
       hideTabs: true,
