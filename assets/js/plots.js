@@ -62,3 +62,21 @@ function initializeViz() {
   }
   
   initializeViz4();
+
+
+  function initializeViz5() {
+    // JS object that points at empty div in the html
+    var placeholderDiv = document.getElementById("viz5");
+    // URL of the viz to be embedded
+    var url = "https://public.tableau.com/views/NumberofTweets/Dashboard1?:language=es&:display_count=y&publish=yes&:origin=viz_share_link";
+    // An object that contains options specifying how to embed the viz
+    var options2 = {
+      hideTabs: true,
+      hideToolbar: true,
+      // width: '500px',
+      // height: '500px',
+    };
+    viz = new tableau.Viz(placeholderDiv, url, options2);
+  }
+  
+  initializeViz5();
